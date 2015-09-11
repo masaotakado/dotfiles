@@ -1,0 +1,16 @@
+[core]
+	excludesfile = /Users/mac/.gitignore_global
+	editor = vim
+	pager = less
+	quotepath = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[http]
+	sslVerify = false
+[user]
+	name = masao takado
+	email = masao.0408@gmail.com
