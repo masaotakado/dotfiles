@@ -1,11 +1,11 @@
+"masao vimrc
+
 set encoding=utf-8
 
 scriptencoding utf-8
 
 syntax enable
 
-"viで起動してしまった時
-set nocompatible
 "行番号を表示
 set number
 " カーソルが何行目の何列目に置かれているかを表示する。（有効:ruler/無効:noruler）
