@@ -129,6 +129,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'scrooloose/nerdtree'
 " NERDTreeをCtrl + eで起動出来るように設定
 nnoremap <silent> <C-e> :NERDTreeToggle<CR>
+"隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1
 
 NeoBundle 'Shougo/neocomplete.vim'
  
