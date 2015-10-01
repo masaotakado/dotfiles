@@ -52,6 +52,10 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 " 暗い背景色に合わせた配色にする
 set background=dark
 
+"ctagsの設定 複数宣言元が見つかった場合はリスト表示
+"Ctrl+hで垂直分割&ジャンプ・Ctrl+kで水平分割&ジャンプ
+nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+nnoremap <C-k> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 "閉じ括弧を自動補完
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
