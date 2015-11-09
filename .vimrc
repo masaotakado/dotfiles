@@ -38,7 +38,7 @@ set expandtab
 " ファイル内の <Tab> が対応する空白の数。
 set tabstop=4
 " インデントの各段階に使われる空白の数。
-set shiftwidth=2
+set shiftwidth=4
 "バックスペースで削除
 set backspace=indent,eol,start
 "オンのときは、ウィンドウの幅より長い行は折り返され、次の行に続けて表示される。（有効:wrap/無効:nowrap）
