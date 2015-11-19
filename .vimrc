@@ -51,6 +51,8 @@ set mouse=a
 nnoremap <ESC><ESC> :nohlsearch<CR>
 " 暗い背景色に合わせた配色にする
 set background=dark
+"クリップボードを共有する
+set clipboard+=unnamed
 
 "ctagsの設定 複数宣言元が見つかった場合はリスト表示
 "Ctrl+hで垂直分割&ジャンプ・Ctrl+kで水平分割&ジャンプ
@@ -261,7 +263,15 @@ call neobundle#end()
  
 " Required:
 filetype plugin indent on
- 
+
+"powerline
+NeoBundle 'alpaca-tc/alpaca_powertabline'
+NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
+NeoBundle 'Lokaltog/powerline-fontpatcher'
+
+let g:Powerline_symbols = 'fancy'
+set laststatus=2
+
 " 未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
 NeoBundleCheck
  
